@@ -1,6 +1,6 @@
 .PHONY := clean
 CXXFLAGS := -march=native -Os -fdata-sections -ffunction-sections -fno-exceptions -fno-rtti -std=c++17 -Wall -Wextra -pedantic
-CXX := g++
+CXX := clang++
 
 UNAME_S := $(shell uname -s)
 
