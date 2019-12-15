@@ -4,6 +4,7 @@
 #include <cstddef>
 #include <optional>
 #include "stone.hpp"
+#include <algorithm>
 
 class Position;
 class BoardDisplayer;
