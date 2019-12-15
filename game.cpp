@@ -11,7 +11,6 @@ Game::Game(PlayerCreator::player_pair_t&& player_pair, std::shared_ptr<BoardDisp
     : board{std::make_unique<Board>(boardSize)}, displayer{displayer_}, gameIO{gameIO_}
 {
     assert((player_pair.first->getColor() != player_pair.second->getColor()) && (player_pair.first->getColor() == StoneColor::Black));
-
     std::tie(current_player, next_player) = std::move(player_pair);
 }
 
