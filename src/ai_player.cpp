@@ -16,7 +16,7 @@ Position AIPlayer::getPosition() const {
     static std::uniform_int_distribution<char> colDistribution('a', static_cast<char>('a' + boardSize - 1));
     static std::uniform_int_distribution<unsigned> rowDistribution(1, boardSize);
     for(;;) {
-        gameIO->showString("AI Player " + name + ", plays " + (color == StoneColor::Black ? "Black": "White") + ".\n");
+         gameIO->showString("AI Player " + name + ", plays " + (color == StoneColor::Black ? "Black": "White") + ".\n");
 
         // Dumb sleep :)
         gameIO->showString("Think");

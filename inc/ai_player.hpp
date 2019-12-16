@@ -3,8 +3,8 @@
 #include <string>
 #include <memory>
 #include <random>
-#include "player.hpp"
 #include "stone.hpp"
+#include "player.hpp"
 
 class GameIO;
 class Position;

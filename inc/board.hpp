@@ -15,7 +15,7 @@ public:
 
     // non copyable
     Board(const Board&) = delete;
-    Board& operator=(const Board&) = delete;
+    Board& operator=(const Board&) =   delete;
 
     bool dropStone(Stone&& stone, const Position& position);
     void accept(BoardDisplayer& displayer) const;
