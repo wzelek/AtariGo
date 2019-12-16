@@ -46,7 +46,7 @@ $(BUILDDIR)/%.d: $(SRCDIR)/%.cpp
 GTEST_SRCFILES := $(wildcard $(TESTDIR)/*.cc) 
 GTEST_OBJFILES := $(patsubst $(TESTDIR)/%.cc,$(BUILDDIR)/%.o,$(GTEST_SRCFILES)) 
 
-gtest: $(BINDIR)/.gtest
+gtest: $(BINDIR)/.gtest runTests
 
 $(BINDIR)/.gtest: $(GTEST_OBJFILES) 
 	$(dir_guard)
@@ -59,6 +59,10 @@ $(BUILDDIR)/%.o: $(TESTDIR)/%.cc
 $(BUILDDIR)/%.d: $(TESTDIR)/%.cc
 	$(dir_guard)
 	$(CXX) $(INCDIRS) -MM $< > $@
+
+runTests:
+	$(BINDIR)/.gtest > ~gtest_output.txt
+# 	diff ~gtest_output.txt gtest_output.txt
 
 clean:
 	$(RM) -r $(BINDIR) $(BUILDDIR)

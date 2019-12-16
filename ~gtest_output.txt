@@ -1,0 +1,41 @@
+Running gtest main() from test/gtest_main.cc
+[==========] Running 7 tests from 7 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from FactorialTest1
+[ RUN      ] FactorialTest1.Negative
+[       OK ] FactorialTest1.Negative (0 ms)
+[----------] 1 test from FactorialTest1 (0 ms total)
+
+[----------] 1 test from FactorialTest2
+[ RUN      ] FactorialTest2.Negative
+[       OK ] FactorialTest2.Negative (0 ms)
+[----------] 1 test from FactorialTest2 (0 ms total)
+
+[----------] 1 test from FactorialTest3
+[ RUN      ] FactorialTest3.Negative
+[       OK ] FactorialTest3.Negative (0 ms)
+[----------] 1 test from FactorialTest3 (0 ms total)
+
+[----------] 1 test from FactorialTest4
+[ RUN      ] FactorialTest4.Negative
+[       OK ] FactorialTest4.Negative (0 ms)
+[----------] 1 test from FactorialTest4 (0 ms total)
+
+[----------] 1 test from FactorialTest5
+[ RUN      ] FactorialTest5.Negative
+[       OK ] FactorialTest5.Negative (0 ms)
+[----------] 1 test from FactorialTest5 (0 ms total)
+
+[----------] 1 test from FactorialTest6
+[ RUN      ] FactorialTest6.Negative
+[       OK ] FactorialTest6.Negative (0 ms)
+[----------] 1 test from FactorialTest6 (0 ms total)
+
+[----------] 1 test from FactorialTest7
+[ RUN      ] FactorialTest7.Negative
+[       OK ] FactorialTest7.Negative (0 ms)
+[----------] 1 test from FactorialTest7 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 7 test cases ran. (4 ms total)
+[  PASSED  ] 7 tests.

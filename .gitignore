@@ -34,3 +34,4 @@
 main
 build/*
 bin/*
+gtest_output.txt
