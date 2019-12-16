@@ -8,7 +8,8 @@
 class GameIO;
 class Position;
 
-class Player {
+class Player 
+{
 public:
     Player(const std::string& name, StoneColor color, std::shared_ptr<GameIO> displayer, unsigned boardSize);
     virtual ~Player();
