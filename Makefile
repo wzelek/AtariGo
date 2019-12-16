@@ -18,6 +18,11 @@ DEPFILES := $(patsubst $(SRCDIR)/%.cpp,$(BUILDDIR)/%.d,$(SRCFILES))
 
 # $^ - evaluates to the list of dependencies
 # $@ - name of the product
+# $< - represents the first prerequisite required to create the output file (usually the source file).
+# 	$@ evaluates to all
+# 	$< evaluates to library.cpp
+#   $^ evaluates to library.cpp main.cpp
+
 $(BINDIR)/$(TARGET): $(OBJFILES)
 	$(dir_guard)
 	$(CXX) $(CXXFLAGS) $^ -o $@ 
